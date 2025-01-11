@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Register() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-blue-900 text-white">
@@ -46,7 +48,7 @@ export default function Register() {
               Want to learn more about our platform? Contact us at:
             </p>
             <a 
-              href="mailto:amankirmara143@gmail.com"
+              href="mailto:office.aman@proton.me"
               className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300"
             >
               office.aman@proton.me
@@ -58,13 +60,13 @@ export default function Register() {
         </div>
 
         <div className="text-center mt-8">
-          <a 
+          <Link 
             href="/"
             className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors"
           >
             <span className="mr-2">←</span>
             Back to Home
-          </a>
+          </Link>
         </div>
       </div>
     </div>

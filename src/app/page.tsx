@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import Link from 'next/link';
 
 function CountdownTimer() {
   const [timeLeft, setTimeLeft] = useState("");
@@ -73,7 +74,7 @@ export default function Home() {
               Join the Waitlist
             </h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
+              <Link
                 href="/register"
                 className="group px-8 py-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold transition-all duration-300"
               >
@@ -81,22 +82,16 @@ export default function Home() {
                 <span className="inline-block transition-transform group-hover:translate-x-1 ml-1">
                   →
                 </span>
-              </a>
-              {/* <a
-                href="/about"
-                className="px-8 py-3 rounded-full border border-blue-400 hover:bg-blue-400/10 text-blue-400 font-semibold transition-all duration-300"
-              >
-                Learn More
-              </a> */}
+              </Link>
             </div>
           </section>
         </main>
 
         <footer className="mt-20 pt-8 border-t border-white/10">
           <div className="flex justify-center space-x-8 text-blue-300">
-            <a href="/community" className="hover:text-white transition-colors">Community</a>
-            <a href="/resources" className="hover:text-white transition-colors">Resources</a>
-            <a href="/about" className="hover:text-white transition-colors">About Us</a>
+            <Link href="/community" className="hover:text-white transition-colors">Community</Link>
+            <Link href="/resources" className="hover:text-white transition-colors">Resources</Link>
+            <Link href="/about" className="hover:text-white transition-colors">About Us</Link>
           </div>
         </footer>
       </div>
